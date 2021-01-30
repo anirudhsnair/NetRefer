@@ -8,4 +8,4 @@ Feature: Note creation functionality of Simplenote
     Then Created note should be available in the notes list with "<note>"
      Examples: 
       | email                     | password   | note          | 
-      | anirudh.s.nair@gmail.com  | Quest@2021 | SampleNote    | 
+      | anirudh.s.nair@gmail.com  | Quest@2021 | SampleNote    |
