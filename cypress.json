@@ -1,0 +1,7 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "url":"https://www.evernote.com/Login.action",
+    "chromeWebSecurity": false
+  }
+
+  

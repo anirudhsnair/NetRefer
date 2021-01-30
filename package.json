@@ -1,0 +1,19 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "Test for netrefer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anirudh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.3.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-wait-until": "^1.7.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
