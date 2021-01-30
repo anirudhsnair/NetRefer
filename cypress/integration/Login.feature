@@ -6,7 +6,7 @@ Feature: Login functionality of Evernote
     Then Homepage should be displayed
      Examples: 
       | email                     | password   | 
-      | anirudh.s.nair@gmail.com  | Quest@2021 |  
+      | anirudh.s.nair@gmail.com  | Quest@2021 |   
     
      Scenario Outline: Warning message for non-registered email 
     Given User is on Login Page
