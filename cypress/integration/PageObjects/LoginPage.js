@@ -10,20 +10,20 @@ getLoginButton(){
     return cy.get('#loginButton');
 }
 getLoginUserName() {
-    return cy.get('._2nB_7KEJsuhQKdDMrrWUp8',{timeout: 20000});
+    return cy.get('._2nB_7KEJsuhQKdDMrrWUp8',{timeout: 25000});
 }
 
 getResponseMessage() {
-    return cy.get('#responseMessage');
+    return cy.get('#responseMessage',{timeout: 20000});
 }
 
 getErrorStatusMessage() {
-    return cy.get('.error-status');
+    return cy.get('.error-status',{timeout: 20000});
 }
 
 getRememberMe()
 {
-    return cy.get('#rememberMe');
+    return cy.get('#rememberMe',{timeout: 20000});
 }
 
 getUserMenu()

@@ -39,7 +39,7 @@ Then ('Warning message {string} should be displayed',(warningMessage) => {
     }
     else if(warningMessage.startsWith("Incorrect password"))
     {
-        loginPage.getErrorStatusMessage().should('have.text',warningMessage);
+        loginPage.getErrorStatusMessage().contains("Incorrect password. You modified your password ");
   
     }
     else if(warningMessage.startsWith("Required data missing"))
