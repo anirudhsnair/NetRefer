@@ -20,8 +20,7 @@
   3. Navigate to project folder For eg: "cd c:\netrefer"
   4. Then execute command "npx cypress open"
   5. Click on the feature to be executed from cypress Window
-  ![alt text](https://github.com/anirudhsnair/NetRefer/blob/master/CypressWindow.jpg?raw=true)
-  
+  ![alt text](https://github.com/anirudhsnair/NetRefer/blob/master/CypressWindow.jpg?raw=true) 
   ![alt text](https://github.com/anirudhsnair/NetRefer/blob/master/CypressResults.PNG?raw=true)
   
 
