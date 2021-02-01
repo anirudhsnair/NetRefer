@@ -70,7 +70,7 @@ When ('User checks Remember me for 30 days while login to the system with {strin
     loginPage.getEmail().type(email);
     loginPage.getLoginButton().click();
     loginPage.getPassword().type(password);
-    loginPage.getRememberMe().click();
+    loginPage.getRememberMe().check();
     loginPage.getLoginButton().click();
 
     
@@ -91,19 +91,28 @@ And ('Navigate to login page', () => {
 })
 
 Then ('{string} should be prefilled in email input field',(email)=>{
-    loginPage.getEmail().should('have.text',email);
+
+     expect(loginPage.getEmail().invoke('val').should('not.to.be.empty'));
+    loginPage.getEmail().should('have.value', email)
+
+
+
 })
 
 When ('User un-checks Remember me for 30 days while login to the system with {string} and {string}', (email,password) => {
     loginPage.getEmail().type(email);
     loginPage.getLoginButton().click();
     loginPage.getPassword().type(password);
-    loginPage.getRememberMe().click();
+    loginPage.getRememberMe().uncheck();
     loginPage.getLoginButton().click();
 
     
 })
 
 Then ('{string} should be cleared in email input field',(email)=>{
-    loginPage.getEmail().should('not.have.text',email);
+
+  expect(loginPage.getEmail().invoke('val').should('to.be.empty'));
+      loginPage.getEmail().should('not.have.value', email)
+
+
 })
