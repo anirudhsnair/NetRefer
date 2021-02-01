@@ -27,4 +27,4 @@
 # Output | Results Location
 
 Test execution report is available at "netrefer\cypress\report\mochawesome-report\"
- 
+![alt text](https://github.com/anirudhsnair/NetRefer/blob/master/HTML_Reports.PNG?raw=true)
