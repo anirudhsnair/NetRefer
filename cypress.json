@@ -2,6 +2,10 @@
     "testFiles": "**/*.{feature,features}",
     "url":"https://www.evernote.com/Login.action",
     "chromeWebSecurity": false,
+    "loginbaseUrl": "https://www.evernote.com/Login.action",
+    "noteCreationbaseUrl": "https://app.simplenote.com/login/",
+  "listUserBackendUrl": "https://reqres.in/api/users",
+  "registrationBackendUrl": "https://reqres.in/api/register",
     "reporter": "mochawesome",
   "reporterOptions": {
       "reportDir": "cypress/report/mochawesome-report",

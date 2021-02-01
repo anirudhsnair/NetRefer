@@ -3,9 +3,10 @@ import LoginPage from '../PageObjects/LoginPage';
 import 'cypress-wait-until';
 
 const loginPage=new LoginPage();
+var baseUrl=Cypress.config('loginbaseUrl');
 
 Given('User is on Login Page', () => {
-    cy.visit('https://www.evernote.com/Login.action',{timeout: 10000});
+    cy.visit(baseUrl,{timeout: 10000});
     cy.on('uncaught:exception', (err, runnable) => {
         return false
       }) 

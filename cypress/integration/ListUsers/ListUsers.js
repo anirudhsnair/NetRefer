@@ -1,10 +1,11 @@
 import { Given , When,Then} from "cypress-cucumber-preprocessor/steps";
 var statusCode;
 var bodyContent;
+var apibaseUrl=Cypress.config('listUserBackendUrl');
 When ('api- valid request for listing users', () => {
 
       cy.request({
-        url: 'https://reqres.in/api/users/', 
+        url:  apibaseUrl, 
         failOnStatusCode: false 
       }).then((response) => {
         statusCode=response.status;
@@ -18,7 +19,7 @@ When ('api- valid request for listing users', () => {
     When ('api- invalid request for listing users', () => { 
 
       cy.request({
-        url: 'https://reqres.in/api/users/23', 
+        url: apibaseUrl+'/23', 
         failOnStatusCode: false 
       }).then((response) => {
         statusCode=response.status;

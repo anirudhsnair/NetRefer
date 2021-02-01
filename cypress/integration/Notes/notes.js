@@ -5,9 +5,10 @@ import 'cypress-wait-until';
 
 const loginPage=new LoginPage();
 const notesPage=new NotesPage();
+var baseUrl=Cypress.config('noteCreationbaseUrl');
 
 Given('User is logged into the system with {string} and {string}', (email,password) => {
-    cy.visit('https://app.simplenote.com/login/',{timeout: 10000});
+    cy.visit(baseUrl,{timeout: 10000});
     cy.on('uncaught:exception', (err, runnable) => {
         return false
       }) 
