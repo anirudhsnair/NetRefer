@@ -21,7 +21,7 @@ Feature: Login functionality of Evernote
     When User login to the system with "<valid email>" and "<invalid password>"
     Then Warning message "<warning message>" should be displayed
       Examples: 
-      | valid email                | invalid password | warning message                                                    |
+      | valid email                | invalid password | warning message                                           |
       | anirudh.s.nair@gmail.com   | anirudh857$      | Incorrect password. You modified your password 2 days ago.|
     
    Scenario Outline: Warning message on leaving email as blank
